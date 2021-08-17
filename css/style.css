@@ -72,6 +72,14 @@ img {
 
 /* -------Header---------- */
 /* -----Logo----- */
+.header-page__con,
+.header-page__nav,
+.site-nav,
+.contact-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--logo-color);
   font-family: Raleway;
@@ -88,15 +96,8 @@ img {
 .logo-text {
   color: var(--accent-color);
 }
-
 /* ----End of Logo---- */
-.header-page .container,
-.navigation,
-.site-nav,
-.contact-nav {
-  display: flex;
-  align-items: center;
-}
+
 .header-page {
   border-bottom: 1px solid #c4c4c4;
 }
@@ -475,7 +476,7 @@ img {
   transition: color 250ms var(--cubic-bezier);
 }
 
-.footer-page__logo--inverse {
+.footer-page__logo {
   color: var(--secondary-text-color);
 }
 .address {
