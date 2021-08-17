@@ -71,6 +71,25 @@ img {
 }
 
 /* -------Header---------- */
+/* -----Logo----- */
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: color 250ms var(--cubic-bezier);
+}
+/* Made our Web bluey */
+.logo-text {
+  color: var(--accent-color);
+}
+
+/* ----End of Logo---- */
 .header-page .container,
 .navigation,
 .site-nav,
@@ -375,8 +394,6 @@ img {
 .address-text:hover,
 .logo:hover,
 .logo:focus,
-.logo:hover,
-.logo:focus,
 .footer-contact .link:focus,
 .footer-contact .link:hover {
   color: var(--accent-color);
@@ -391,24 +408,6 @@ img {
 .filter-button:focus,
 .filter-button:hover {
   color: var(--secondary-text-color);
-}
-
-/* Logo */
-.logo {
-  color: var(--logo-color);
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-
-  transition: color 250ms var(--cubic-bezier);
-}
-/* Made our Web to bluey */
-.logo > span {
-  color: var(--accent-color);
 }
 
 /* Эмблемки для Постоянные клиенты */
@@ -475,7 +474,8 @@ img {
   text-decoration: none;
   transition: color 250ms var(--cubic-bezier);
 }
-.footer-page__logo {
+
+.footer-page__logo--inverse {
   color: var(--secondary-text-color);
 }
 .address {
