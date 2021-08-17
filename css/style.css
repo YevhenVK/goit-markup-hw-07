@@ -70,44 +70,65 @@ img {
   transition: color 250ms var(--cubic-bezier);
 }
 
-/* Header  */
-.container .item:not(:last-child) {
-  margin-right: 50px;
-}
+/* -------Header---------- */
 .header-page .container,
 .navigation,
 .site-nav,
-.contact.list {
+.contact-nav {
   display: flex;
   align-items: center;
 }
-.contact .link {
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav__link.current {
+  color: var(--accent-color);
+}
+.site-nav__item {
+  margin-right: 50px;
+}
+.site-nav__item:last-child {
+  margin-right: 0;
+}
+
+.site-nav__link,
+.contact-nav__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact-nav {
+  margin-left: auto;
+}
+.contact-nav__item {
+  margin-right: 30px;
+}
+.contact-nav__item:last-child {
+  margin-right: 0;
+}
+.contact-nav__link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
-.site-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  margin-left: 93px;
-}
-.nav-item .link,
-.contact-item .link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 /* -----Подчеркивание ссылок----- */
-.nav-item.item {
+.site-nav__item {
   position: relative;
 }
-
 .link.current::after {
   display: block;
   position: absolute;
@@ -117,42 +138,20 @@ img {
   bottom: -1px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  /* transition: transform 250ms var(--cubic-bezier);
-  transform: scaleX(0%); */
 }
-/* .link.current:hover::after {
-  transform: scaleX(100%);
-} */
 /* ------------------------------------ */
-.contact {
-  margin-left: auto;
-}
-.contact-item {
-  padding: 0px;
-  display: flex;
-}
-/* Значки слева от телефона и почты 2 вариант */
-.bond {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contact-item a:hover,
-.contact-item a:focus {
+.site-nav__link:focus,
+.site-nav__link:hover,
+.contact-nav__link:hover,
+.contact-nav__link:focus {
   color: var(--accent-color);
 }
 
-.container .contact-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
-}
 /* Нижняя граница хедера в сером цвете */
 .header-page {
   border-bottom: 1px solid #c4c4c4;
 }
+/* ----------End of the header--------- */
 
 /* Main */
 .post {
@@ -381,9 +380,7 @@ img {
 .logo.down:hover,
 .logo.down:focus,
 .footer-contact .link:focus,
-.footer-contact .link:hover,
-.site-nav .link:focus,
-.site-nav .link:hover {
+.footer-contact .link:hover {
   color: var(--accent-color);
 }
 .post-button:focus,
