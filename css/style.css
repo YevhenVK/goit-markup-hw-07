@@ -90,7 +90,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav__link.current {
+.site-nav__link--active {
   color: var(--accent-color);
 }
 .site-nav__item {
@@ -132,7 +132,7 @@ img {
 .site-nav__item {
   position: relative;
 }
-.link.current::after {
+.site-nav__link--active::after {
   display: block;
   position: absolute;
   content: "";
@@ -375,8 +375,8 @@ img {
 .address-text:hover,
 .logo:hover,
 .logo:focus,
-.logo.down:hover,
-.logo.down:focus,
+.logo:hover,
+.logo:focus,
 .footer-contact .link:focus,
 .footer-contact .link:hover {
   color: var(--accent-color);
@@ -475,7 +475,7 @@ img {
   text-decoration: none;
   transition: color 250ms var(--cubic-bezier);
 }
-.logo.down {
+.footer-page__logo {
   color: var(--secondary-text-color);
 }
 .address {
