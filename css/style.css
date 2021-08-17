@@ -78,6 +78,9 @@ img {
   display: flex;
   align-items: center;
 }
+.header-page {
+  border-bottom: 1px solid #c4c4c4;
+}
 .site-nav {
   margin-left: 93px;
 }
@@ -145,11 +148,6 @@ img {
 .contact-nav__link:hover,
 .contact-nav__link:focus {
   color: var(--accent-color);
-}
-
-/* Нижняя граница хедера в сером цвете */
-.header-page {
-  border-bottom: 1px solid #c4c4c4;
 }
 /* ----------End of the header--------- */
 
