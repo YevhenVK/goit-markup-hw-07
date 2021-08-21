@@ -12,9 +12,7 @@
     margin-left: 93px;
 
     &__link {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
+      @extend %font-500-14px;
       letter-spacing: 0.02em;
 
       &--active {
@@ -42,9 +40,7 @@
 
   &__link {
     color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @extend %font-500-14px;
     letter-spacing: 0.02em;
   }
   &__icon {

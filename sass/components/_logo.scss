@@ -1,8 +1,6 @@
 // Logo
 .logo {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @extend %font-700-26px;
   color: $logo-color;
   font-family: $font-Raleway;
   font-style: normal;

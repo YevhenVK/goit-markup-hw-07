@@ -3,9 +3,6 @@
   padding-bottom: 94px;
 }
 .section-employment__occupation {
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.16;
   @extend %font-700-36px;
   align-items: center;
   text-align: center;
@@ -34,10 +31,8 @@
   height: 70px;
   margin: 0;
 
+  @extend %font-700-14px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;

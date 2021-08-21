@@ -4,9 +4,7 @@
   background-color: $background-team-color;
 }
 .members__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @extend %font-700-36px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
@@ -25,17 +23,13 @@
 }
 
 .personal-card__heading {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  @extend %font-500-16px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 .personal-card__label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
+  @extend %font-400-16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: $primary-text-color;

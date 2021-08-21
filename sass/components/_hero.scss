@@ -23,9 +23,7 @@
 .post__title {
   margin: 0 auto;
   color: $secondary-text-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @extend %font-900-44px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
@@ -41,9 +39,7 @@
   align-items: center;
   min-width: 200px;
   padding: 10px 32px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @extend %font-700-16px;
   border-radius: 4px;
   letter-spacing: 0.06em;
   border: none;

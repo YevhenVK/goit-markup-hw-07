@@ -20,18 +20,14 @@
 .footer-page__link {
   color: $secondary-address-color;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @extend %font-400-14px;
   letter-spacing: 0.03em;
 }
 .footer-page__adds {
   color: $secondary-text-color;
   font-family: $font-Roboto;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @extend %font-400-14px;
   letter-spacing: 0.03em;
   text-decoration: none;
   transition: color 250ms $cubic-bezier;
@@ -49,9 +45,7 @@
 .footer-conection__title {
   color: $secondary-text-color;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @extend %font-700-14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -87,9 +81,7 @@
 .subscribe-form__title {
   color: $secondary-text-color;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @extend %font-700-14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -125,9 +117,7 @@
   align-items: center;
   width: 200px;
   padding: 10px 28px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @extend %font-700-16px;
   border-radius: 4px;
   letter-spacing: 0.06em;
   border: none;

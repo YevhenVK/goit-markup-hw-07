@@ -15,9 +15,7 @@
   }
 }
 .filter__button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @extend %font-500-16px;
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
@@ -84,9 +82,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+    @extend %font-400-18px;
     letter-spacing: 0.03em;
     margin: 0;
     padding: 63px 24px;
@@ -106,16 +102,12 @@
 }
 .content__name {
   color: $title-text-color;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @extend %font-700-18px;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 .content__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
+  @extend %font-400-16px;
   letter-spacing: 0.03em;
   color: $primary-text-color;
 }
