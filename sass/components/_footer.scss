@@ -1,6 +1,5 @@
-/* ---------- Footer -----------*/
-
-/* ------- Первый блок -------- */
+// Footer
+// Первый блок
 .footer-page {
   background-color: $secondary-background-color;
   padding: 60px 0 60px 0;
@@ -43,8 +42,7 @@
 .footer-page__link:hover {
   color: $accent-color;
 }
-/* ---------------------------- */
-/* ------- Второй блок -------- */
+// Второй блок
 .footer-conection {
   margin-left: 70px;
 }
@@ -82,8 +80,7 @@
 .footer-conection__link:focus {
   background-color: $accent-color;
 }
-/* ---------------------------- */
-/* ------- Третий блок -------- */
+// Третий блок
 .subscribe-form {
   margin-left: auto;
 }

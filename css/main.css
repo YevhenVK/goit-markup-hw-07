@@ -92,8 +92,6 @@ img {
   color: #2196f3;
 }
 
-/* ---------------------------- */
-/* -------- End of Logo ------- */
 .header-page {
   border-bottom: 1px solid #c4c4c4;
 }
@@ -961,8 +959,6 @@ img {
   color: #757575;
 }
 
-/* ---------- Footer -----------*/
-/* ------- Первый блок -------- */
 .footer-page {
   background-color: #2f303a;
   padding: 60px 0 60px 0;
@@ -1018,8 +1014,6 @@ img {
   color: #2196f3;
 }
 
-/* ---------------------------- */
-/* ------- Второй блок -------- */
 .footer-conection {
   margin-left: 70px;
 }
@@ -1073,8 +1067,6 @@ img {
   background-color: #2196f3;
 }
 
-/* ---------------------------- */
-/* ------- Третий блок -------- */
 .subscribe-form {
   margin-left: auto;
 }
