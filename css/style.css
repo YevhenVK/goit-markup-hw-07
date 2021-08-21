@@ -69,9 +69,9 @@ img {
   cursor: pointer;
   transition: color 250ms var(--cubic-bezier);
 }
-
-/* -------Header---------- */
-/* -------Logo------- */
+/* ---------------------------- */
+/* ---------- Header ---------- */
+/* ----------- Logo ----------- */
 .header-page__con,
 .header-page__nav,
 .site-nav,
@@ -98,8 +98,8 @@ img {
 .logo-text {
   color: var(--accent-color);
 }
-/* ----End of Logo---- */
-/* ---------Header------- */
+/* ---------------------------- */
+/* -------- End of Logo ------- */
 .header-page {
   border-bottom: 1px solid #c4c4c4;
 }
@@ -169,9 +169,9 @@ img {
 .contact-nav__link:focus {
   color: var(--accent-color);
 }
-/* ----------End of the header--------- */
+/* ----- End of the header ---- */
 
-/* ------Main------ */
+/* ----------- Main ----------- */
 .post {
   display: flex;
   min-height: 600px;
@@ -193,7 +193,6 @@ img {
     url("../img/Header.jpg");
   width: 100%;
 }
-
 .post__title {
   margin: 0 auto;
   color: var(--secondary-text-color);
@@ -229,7 +228,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-/* -----Container text----- */
+/* ---------------------------- */
+/* ------ Container text ------ */
 .section__list {
   display: flex;
 }
@@ -269,7 +269,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-/* --------Чем мы занимаемся--------- */
+/* ---------------------------- */
+/* ---- Чем мы занимаемся ----- */
 .section-employment {
   padding-bottom: 94px;
 }
@@ -314,8 +315,9 @@ img {
   color: var(--secondary-text-color);
   background-color: var(--choice-services-color);
 }
+/* ---------------------------- */
 
-/* ------Наша команда---------- */
+/* ------- Наша команда ------- */
 .members {
   color: var(--title-text-color);
   background-color: var(--background-team-color);
@@ -381,9 +383,9 @@ img {
   background-color: var(--accent-color);
   fill: var(--primary-background-color);
 }
-/* ---------------------------------------- */
+/* ---------------------------- */
 
-/* --------Постоянные клиенты-------- */
+/* ---- Постоянные клиенты ---- */
 .business__heading {
   color: var(--title-text-color);
   font-weight: 700;
@@ -419,9 +421,11 @@ img {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-/* --------- Footer --------*/
+/* ---------------------------- */
 
-/* ----Первый блок---- */
+/* ---------- Footer -----------*/
+
+/* ------- Первый блок -------- */
 .footer-page {
   background-color: var(--secondary-background-color);
   padding: 60px 0 60px 0;
@@ -464,8 +468,8 @@ img {
 .footer-page__link:hover {
   color: var(--accent-color);
 }
-/* ------------------- */
-/* ----Второй блок---- */
+/* ---------------------------- */
+/* ------- Второй блок -------- */
 .footer-conection {
   margin-left: 70px;
 }
@@ -503,8 +507,8 @@ img {
 .footer-conection__link:focus {
   background-color: var(--accent-color);
 }
-/* ------------------- */
-/* ----Третий блок---- */
+/* ---------------------------- */
+/* ------- Третий блок -------- */
 .subscribe-form {
   margin-left: auto;
 }
@@ -567,18 +571,9 @@ img {
   margin-left: 10px;
 }
 
-/* ------------------- */
+/* ---------------------------- */
 
-.filter-button:focus,
-.filter-button:hover {
-  color: var(--secondary-text-color);
-}
-
-/* ------Подпишитесь на рассылку------ */
-
-/* ----------------------------------- */
-
-/* ---------Portfolio------------ */
+/* ---------Portfolio---------- */
 .filter {
   display: flex;
   margin-bottom: 50px;
@@ -587,11 +582,14 @@ img {
   justify-content: center;
   font-family: inherit;
 }
-.button-line {
+.filter__buttons {
   background-color: var(--background-button-color);
   border-radius: 4px;
 }
-.filter-button {
+.filter__buttons:not(:first-child) {
+  margin-left: 8px;
+}
+.filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -600,97 +598,69 @@ img {
   letter-spacing: 0.03em;
   padding: 6px 22px;
   border: none;
-  /* -----Кнопки в портфолио плавно подсвечиваются------- */
+  /* -----Кнопки в портфолио подсвечиваются------- */
   transition: background-color 250ms var(--cubic-bezier),
     box-shadow 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
 }
-.button-line:not(:first-child) {
-  margin-left: 8px;
-}
-.filter-button.current {
+.filter__button--current {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.filter-button:focus,
-.filter-button:hover,
-.filter-button:active {
+.filter__button:focus,
+.filter__button:hover,
+.filter__button:active {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/* Карточки */
-.content-name {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
+.filter__button:focus,
+.filter__button:hover {
+  color: var(--secondary-text-color);
 }
-.content-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
+/* ---------------------------- */
 
-/* Самый правильный для меня отступ между карточками */
-/* Карточки-3х3 */
-.content.list {
+/* --------- Карточки --------- */
+.content {
   display: flex;
   flex-wrap: wrap;
 }
-.content-item {
+.content__item {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
-.content-item:nth-child(3n) {
+.content__item:nth-child(3n) {
   margin-right: 0;
 }
-.content-item:nth-last-child(-n + 3) {
+.content__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
-.content-item-link {
+.content__link {
   display: block;
 }
-
-/* Тень для карточек в портфолио */
-
-.content-item-link {
+.content__link {
   display: block;
   transition: box-shadow 250ms var(--cubic-bezier);
 }
-
-.content-item-link:hover,
-.content-item-link:focus {
+.content__link:hover,
+.content__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/* --------------------------------- */
-/* Нижняя тумбочка карточки */
-.card-title {
-  display: block;
-  padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+.content__link:hover .product-thumb__text,
+.content__link:focus .product-thumb__text {
+  transform: translateY(0%);
+  opacity: 1;
 }
-/* ------------------------- */
-
-/* -- Синий фон над фото у карточек -- */
-
 .product-thumb {
   position: relative;
   overflow: hidden;
 }
-.product-thumb > p {
+.product-thumb__text {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -708,19 +678,31 @@ img {
   transition: transform 250ms linear, opacity 250ms linear;
   opacity: 0;
 }
-.content-item-link:hover .product-text,
-.content-item-link:focus .product-text {
-  transform: translateY(0%);
-  opacity: 1;
+.content__title {
+  display: block;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
-/* ------------------------ */
+.content__name {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.content__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* ---------------------------- */
 
-/* ---Модальное окно Зкаказать услугу--- */
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+/* ------ Модальное окно ------ */
 .backdrop {
   position: fixed;
   top: 0;
@@ -733,7 +715,11 @@ img {
   transition: opacity 250ms var(--cubic-bezier),
     visibility 250ms var(--cubic-bezier);
 }
-
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -747,45 +733,15 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
-.modal-close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: var(--primary-background-color);
-}
-
-.modal-close-icon {
-  position: absolute;
-  fill: currentColor;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: color 250ms var(--time-function);
-}
-
-.modal-close-icon:focus,
-.modal-close-icon:hover {
-  color: var(--accent-color);
-}
-/* ------------------------------------ */
-
-/* -----Формы заполнения----- */
-
-.modal-form {
+/* ------Формы заполнения------ */
+.modal__form {
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
   width: 448px;
 }
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -797,33 +753,14 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-
+.modal__registry:not(:last-child) {
+  margin-bottom: 10px;
+}
 .form-field {
   display: block;
   position: relative;
 }
-.form-field.log:not(:last-child) {
-  margin-bottom: 10px;
-}
-.form-icon {
-  position: absolute;
-  left: 12px;
-  top: 28px;
-  fill: rgba(33, 33, 33, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-field:focus-within > .form-icon,
-.form-field:hover > .form-icon {
-  fill: #2196f3;
-}
-.form-field:focus-within > .form-input:focus,
-.form-field:focus-within > .commentary:focus,
-.form-field > .form-input:hover,
-.form-field > .commentary:hover {
-  border: 1px solid #2196f3;
-}
-.form-field-text {
+.modal__text {
   display: block;
   font-family: Roboto;
   font-style: normal;
@@ -834,8 +771,7 @@ img {
   color: #757575;
   margin-bottom: 4px;
 }
-
-.form-input {
+.modal__input {
   padding: 0;
   height: 40px;
   width: 448px;
@@ -847,8 +783,17 @@ img {
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.commentary {
+.modal__icon {
+  position: absolute;
+  left: 12px;
+  top: 28px;
+  fill: rgba(33, 33, 33, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__comments {
+  margin-bottom: 20px;
+}
+.modal__commentary {
   padding: 12px 16px;
   width: 448px;
   height: 120px;
@@ -860,8 +805,7 @@ img {
   resize: none;
   outline: none;
 }
-
-.commentary::placeholder {
+.modal__commentary::placeholder {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -870,17 +814,24 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-field.way {
-  margin-bottom: 20px;
+.form-field:focus-within > .modal__icon,
+.form-field:hover > .modal__icon {
+  fill: #2196f3;
 }
-.form-policy {
+.form-field:focus-within > .modal__input:focus,
+.form-field:focus-within > .modal__commentary:focus,
+.form-field > .modal__input:hover,
+.form-field > .modal__commentary:hover {
+  border: 1px solid #2196f3;
+}
+
+.modal__policy {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-
-.form-policy-checkbox {
+.modal__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -890,8 +841,33 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.form-policy-text {
+.modal__square-icon {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__checkbox:checked + .modal__square-icon {
+  background-image: url(../img/svg-image/full-check.svg);
+  background-size: cover;
+  background-color: #2196f3;
+  transform: scale(1.2);
+  border: none;
+}
+/* .hidden-checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+} */
+.modal__agreement {
   display: flex;
   margin-left: 7px;
   justify-content: center;
@@ -903,24 +879,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.policy-icon {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
-  cursor: pointer;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-policy-checkbox:checked + .policy-icon {
-  background-image: url(../img/svg-image/full-check.svg);
-  background-size: cover;
-  background-color: #2196f3;
-  transform: scale(1.2);
-  border: none;
-}
-.form-policy-link {
+.modal__link {
   font-style: 400;
   font-weight: normal;
   font-size: 14px;
@@ -929,19 +888,7 @@ img {
   text-decoration-line: underline;
   color: #2196f3;
 }
-
-/* .hidden-checkbox {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-} */
-
-.form-button {
+.modal__button {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 55px;
@@ -959,10 +906,34 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-
-.form-button:focus,
-.form-button:hover {
+.modal__button:focus,
+.modal__button:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* ----------------------------------- */
+/* -------Кнопка закрытия------ */
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--primary-background-color);
+}
+.modal__close-icon {
+  position: absolute;
+  fill: currentColor;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 250ms var(--time-function);
+}
+.modal__close-icon:focus,
+.modal__close-icon:hover {
+  color: var(--accent-color);
+}
+/* ---------------------------- */

@@ -402,46 +402,46 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal" role="group">
-            <form class="modal-form">
-                <p class="modal-title">Оставьте свои данные, мы вам перезвоним<p>
-                <label class="form-field log">
-                    <span class="form-field-text">Имя</span>
-                    <input class="form-input" type="text" name="name" id="name" />
-                    <svg class="form-icon" width="18" height="18">
+            <form class="modal__form">
+                <p class="modal__title">Оставьте свои данные, мы вам перезвоним<p>
+                <label class="modal__registry form-field">
+                    <span class="modal__text">Имя</span>
+                    <input class="modal__input" type="text" name="name" id="name" />
+                    <svg class="modal__icon" width="18" height="18">
                         <use href="./img/sprite.svg#icon-person-black"></use>
                     </svg>
                 </label>
-                <label class="form-field log">
-                    <span class="form-field-text">Телефон</span>
-                    <input class="form-input" type="tel" name="tel" id="tel" />
-                    <svg class="form-icon" width="18" height="18">
+                <label class="modal__registry form-field">
+                    <span class="modal__text">Телефон</span>
+                    <input class="modal__input" type="tel" name="tel" id="tel" />
+                    <svg class="modal__icon" width="18" height="18">
                         <use href="./img/sprite.svg#icon-phone-black"></use>
                     </svg>
                 </label>
-                <label class="form-field log">
-                    <span class="form-field-text">Почта</span>
-                    <input class="form-input" type="email" name="email" id="email" />
-                    <svg class="form-icon" width="18" height="18">
+                <label class="modal__registry form-field">
+                    <span class="modal__text">Почта</span>
+                    <input class="modal__input" type="email" name="email" id="email" />
+                    <svg class="modal__icon" width="18" height="18">
                         <use href="./img/sprite.svg#icon-email-black"></use>
                     </svg>
                 </label>
 
-                <label class="form-field way">
-                    <span class="form-field-text">Комментарий</span> 
-                    <textarea class="commentary" name="commentary" id="commentary" rows="10" placeholder="Введите текст"></textarea>
+                <label class="modal__comments form-field">
+                    <span class="modal__text">Комментарий</span> 
+                    <textarea class="modal__commentary" name="commentary" id="commentary" rows="10" placeholder="Введите текст"></textarea>
                 </label>
 
-                <label class="form-policy">
-                    <input class="form-policy-checkbox hidden-checkbox" type="checkbox" id="policy" />
-                    <span class="policy-icon"></span>
-                    <span class="form-policy-text">Соглашаюсь с рассылкой и принимаю &nbsp;
-                    <a class="form-policy-link" href="#">Условия договора</a></span>
+                <label class="modal__policy">
+                    <input class="modal__checkbox hidden-checkbox" type="checkbox" id="policy" />
+                    <span class="modal__square-icon"></span>
+                    <span class="modal__agreement">Соглашаюсь с рассылкой и принимаю &nbsp;
+                    <a class="modal__link" href="#">Условия договора</a></span>
                 </label>
 
-                <button class="form-button" type="submit">Отправить</button>
+                <button class="modal__button" type="submit">Отправить</button>
             </form>
-            <button data-modal-close class="modal-close-button">
-                <svg class="modal-close-icon" width="18" height="18">
+            <button data-modal-close class="modal__close-button">
+                <svg class="modal__close-icon" width="18" height="18">
                     <use href="./img/sprite.svg#icon-close-black"></use>
                 </svg>
             </button>
