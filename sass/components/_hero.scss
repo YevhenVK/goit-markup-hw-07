@@ -1,4 +1,4 @@
-/* ----------- Main ----------- */
+// Main
 .post {
   display: flex;
   min-height: 600px;
@@ -48,11 +48,11 @@
   letter-spacing: 0.06em;
   border: none;
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: $primary-button-color;
+    box-shadow: 0px 4px 4px $button-box-shadow;
+    border-radius: 4px;
+  }
 }
-.post__button:focus,
-.post__button:hover {
-  background-color: $primary-button-color;
-  box-shadow: 0px 4px 4px $button-box-shadow;
-  border-radius: 4px;
-}
-/* ---------------------------- */
